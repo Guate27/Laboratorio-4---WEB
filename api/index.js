@@ -107,6 +107,21 @@ app.put("/api/videojuegos/:id", (req, res) => {
   res.status(200).json({ ok: true, data: videojuegos[index] })
 })
 
+
+// Solicitud HTTP PATCH: Modifica campos específicos de un elemento de un recurso del servidor
+app.patch("/api/videojuegos/:id", (req, res) => {
+  const id = req.params.id
+  const index = videojuegos.findIndex(v => v.id === id)
+
+  if (index === -1) {
+    return res.status(404).json({ ok: false, error: "Videojuego no encontrado" })
+  }
+
+  videojuegos[index] = { ...videojuegos[index], ...req.body }
+
+  res.status(200).json({ ok: true, data: videojuegos[index] })
+})
+
 // Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`API corriendo en http://localhost:${PORT}`)
