@@ -1,0 +1,441 @@
+{
+  "info": {
+    "_postman_id": "6a1bee5e-a6c1-48b7-9f82-603d7ca8d6e8",
+    "name": "LABORATORIO 4 - WEB (SOLICITUDES HTTP)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53375674",
+    "_collection_link": "https://go.postman.co/collection/53375674-6a1bee5e-a6c1-48b7-9f82-603d7ca8d6e8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Solicitud http POST - Crear un nuevo elemento en un recurso específico de la API",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Halo Infinite\",\r\n  \"genero\": \"Acción\",\r\n  \"plataforma\": \"Xbox Series X\",\r\n  \"desarrollador\": \"343 Industries\",\r\n  \"año\": 2021,\r\n  \"calificacion\": 8.7\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}",
+          "host": [
+            "{{URL}}"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Solicitud http POST - Registrar un nuevo videojuego en el servidor",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Halo Infinite\",\r\n  \"genero\": \"Acción\",\r\n  \"plataforma\": \"Xbox Series X\",\r\n  \"desarrollador\": \"343 Industries\",\r\n  \"año\": 2021,\r\n  \"calificacion\": 8.7\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}",
+              "host": [
+                "{{URL}}"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "201"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"c9-Pg3erLfpOgHUkUSZk/47aq0SWSw\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 30 Apr 2026 19:13:09 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ok\": true,\n    \"data\": {\n        \"id\": \"f97e7313-04c9-4a7a-9551-1fad89b3b457\",\n        \"titulo\": \"Halo Infinite\",\n        \"genero\": \"Acción\",\n        \"plataforma\": \"Xbox Series X\",\n        \"desarrollador\": \"343 Industries\",\n        \"año\": 2021,\n        \"calificacion\": 8.7\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Solicitud http GET -  Acceder al contenido completo de un recurso específico de la API",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"titulo\": \"Halo Infinite\",\r\n  \"genero\": \"Acción\",\r\n  \"plataforma\": \"Xbox Series X\",\r\n  \"desarrollador\": \"343 Industries\",\r\n  \"año\": 2021,\r\n  \"calificacion\": 8.7\r\n}"
+        },
+        "url": {
+          "raw": "{{URL}}",
+          "host": [
+            "{{URL}}"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Solicitud http GET - Lectura de la información completa de todos los videojuegos del servidor",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"titulo\": \"Halo Infinite\",\r\n  \"genero\": \"Acción\",\r\n  \"plataforma\": \"Xbox Series X\",\r\n  \"desarrollador\": \"343 Industries\",\r\n  \"año\": 2021,\r\n  \"calificacion\": 8.7\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}",
+              "host": [
+                "{{URL}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1148"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"47c-HOU/oCfV60DZgPrIiiFdhjFW+Fw\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 30 Apr 2026 19:21:56 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ok\": true,\n    \"data\": [\n        {\n            \"id\": \"6e6fc3d7-4b41-4cb9-b460-20e6870b2bf7\",\n            \"titulo\": \"The Legend of Zelda: Breath of the Wild\",\n            \"genero\": \"Aventura\",\n            \"plataforma\": \"Nintendo Switch\",\n            \"desarrollador\": \"Nintendo\",\n            \"año\": 2017,\n            \"calificacion\": 9.5\n        },\n        {\n            \"id\": \"875512ac-615f-4dab-a0b0-c6e423ae70f7\",\n            \"titulo\": \"God of War\",\n            \"genero\": \"Acción\",\n            \"plataforma\": \"PlayStation 4\",\n            \"desarrollador\": \"Santa Monica Studio\",\n            \"año\": 2018,\n            \"calificacion\": 9.3\n        },\n        {\n            \"id\": \"c6ff3be7-afa1-4a74-883e-a36225407f41\",\n            \"titulo\": \"Minecraft\",\n            \"genero\": \"Sandbox\",\n            \"plataforma\": \"Multiplataforma\",\n            \"desarrollador\": \"Mojang\",\n            \"año\": 2011,\n            \"calificacion\": 9\n        },\n        {\n            \"id\": \"44b1d2a9-704d-403c-97d5-9d998d966f85\",\n            \"titulo\": \"Red Dead Redemption 2\",\n            \"genero\": \"Acción-Aventura\",\n            \"plataforma\": \"PlayStation 4\",\n            \"desarrollador\": \"Rockstar Games\",\n            \"año\": 2018,\n            \"calificacion\": 9.7\n        },\n        {\n            \"id\": \"d532bd12-fb08-4b9c-8f6e-4898a1ce9cfd\",\n            \"titulo\": \"Halo Infinite\",\n            \"genero\": \"Acción\",\n            \"plataforma\": \"Xbox Series X\",\n            \"desarrollador\": \"343 Industries\",\n            \"año\": 2021,\n            \"calificacion\": 8.7\n        },\n        {\n            \"id\": \"f97e7313-04c9-4a7a-9551-1fad89b3b457\",\n            \"titulo\": \"Halo Infinite\",\n            \"genero\": \"Acción\",\n            \"plataforma\": \"Xbox Series X\",\n            \"desarrollador\": \"343 Industries\",\n            \"año\": 2021,\n            \"calificacion\": 8.7\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "Solicitud http GET -  Acceder al contenido de un elemento específico de un recurso específico de la API usando su ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{URL_ID}}",
+          "host": [
+            "{{URL_ID}}"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Solicitud http GET - Lectura de la información completa de un videojuego específico",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ID}}",
+              "host": [
+                "{{URL_ID}}"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "224"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"e0-LqJUjaW2lt1GOEOR6jDdJkZQgcw\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 30 Apr 2026 19:23:46 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ok\": true,\n    \"data\": {\n        \"id\": \"6e6fc3d7-4b41-4cb9-b460-20e6870b2bf7\",\n        \"titulo\": \"The Legend of Zelda: Breath of the Wild\",\n        \"genero\": \"Aventura\",\n        \"plataforma\": \"Nintendo Switch\",\n        \"desarrollador\": \"Nintendo\",\n        \"año\": 2017,\n        \"calificacion\": 9.5\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Solicitud http  PUT -  Cambio completo de un elemento específico de un recurso específico del servidor",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \r\n  \"id\": \"1a8f5ae9-8a37-4f60-a5cb-2cb89e0a9469\", \r\n  \"titulo\": \"Minecraft\",\r\n  \"genero\": \"Sandbox\",\r\n  \"plataforma\": \"computadora\",\r\n  \"desarrollador\": \"Hypixel Studios\",\r\n  \"calificacion\": 9,\r\n  \"año\": 2011\r\n  \r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/1a8f5ae9-8a37-4f60-a5cb-2cb89e0a9469",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "1a8f5ae9-8a37-4f60-a5cb-2cb89e0a9469"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Solicitud http  PUT -  Actualización de toda la información  de un videojuego específico registrada en el servidor",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{ \r\n  \"id\": \"1a8f5ae9-8a37-4f60-a5cb-2cb89e0a9469\", \r\n  \"titulo\": \"Minecraft\",\r\n  \"genero\": \"Sandbox\",\r\n  \"plataforma\": \"computadora\",\r\n  \"desarrollador\": \"Hypixel Studios\",\r\n  \"calificacion\": 9,\r\n  \"año\": 2011\r\n  \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/6e6fc3d7-4b41-4cb9-b460-20e6870b2bf7",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "6e6fc3d7-4b41-4cb9-b460-20e6870b2bf7"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "194"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"c2-bOGjCroiHsfjAQyuKWcxYzzuQms\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 30 Apr 2026 19:28:49 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ok\": true,\n    \"data\": {\n        \"id\": \"6e6fc3d7-4b41-4cb9-b460-20e6870b2bf7\",\n        \"titulo\": \"Minecraft\",\n        \"genero\": \"Sandbox\",\n        \"plataforma\": \"computadora\",\n        \"desarrollador\": \"Hypixel Studios\",\n        \"año\": 2011,\n        \"calificacion\": 9\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Solicitud http PATCH - Cambio aplicados un único campo de un elemento de un recurso específico del servidor",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"titulo\": \"El dios de los calvos\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{URL}}/3548ba19-8cf4-4eb3-9cfd-4334463488fd",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "3548ba19-8cf4-4eb3-9cfd-4334463488fd"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Solicitud http PATCH - Solicitud http  PUT -  Actualización de  información específica de un videojuego específico registrada en el servidor",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"titulo\": \"El dios de los calvos\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/3548ba19-8cf4-4eb3-9cfd-4334463488fd",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "3548ba19-8cf4-4eb3-9cfd-4334463488fd"
+              ]
+            }
+          },
+          "_postman_previewlanguage": null,
+          "header": null,
+          "cookie": [],
+          "body": null
+        }
+      ]
+    },
+    {
+      "name": "Solicitud http DELETE - Eliminación completa de un elemento que pertenece a un recurso específico del servidor",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "{{URL}}/f97e7313-04c9-4a7a-9551-1fad89b3b457",
+          "host": [
+            "{{URL}}"
+          ],
+          "path": [
+            "f97e7313-04c9-4a7a-9551-1fad89b3b457"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Solicitud http DELETE - Eliminar la información completa de un videojuego específico",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/f97e7313-04c9-4a7a-9551-1fad89b3b457",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "f97e7313-04c9-4a7a-9551-1fad89b3b457"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "58"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"3a-ZOKcNeJS41tHUjX5Oi/vt+PKSyo\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 30 Apr 2026 19:53:51 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ok\": true,\n    \"mensaje\": \"Videojuego eliminado correctamente\"\n}"
+        }
+      ]
+    }
+  ]
+}
