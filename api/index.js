@@ -122,6 +122,22 @@ app.patch("/api/videojuegos/:id", (req, res) => {
   res.status(200).json({ ok: true, data: videojuegos[index] })
 })
 
+
+// Solicitud HTTP DELETE: Elimina un elemento específico del servidor
+app.delete("/api/videojuegos/:id", (req, res) => {
+  const id = req.params.id
+  const index = videojuegos.findIndex(v => v.id === id)
+
+  if (index === -1) {
+    return res.status(404).json({ ok: false, error: "Videojuego no encontrado" })
+  }
+
+  videojuegos.splice(index, 1)
+
+  res.status(200).json({ ok: true, mensaje: "Videojuego eliminado correctamente" })
+})
+
+
 // Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`API corriendo en http://localhost:${PORT}`)
