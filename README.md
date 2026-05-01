@@ -30,8 +30,8 @@ En este laboratorio se realizaron dos tareas principales. El primer objetivo de 
   4. En la nueva linea que se generó escribir el siguiente comando: node index.js 
 
 - Consumir la API 
-NOTA: Para acceder a cada uno de los recursos de esta API se requiere ingresar las ruta de cada recurso en una ventana de algún navegador.
-  Rutas disponibles:
+  - NOTA: Para acceder a cada uno de los recursos de esta API se requiere ingresar las ruta de cada recurso en una ventana de algún navegador.
+  - Rutas disponibles:
 1. Información general de la API: http://localhost:3000/info
 2. Acceso principal de la API: http://localhost:3000/saludo
 3. Información útil para el uso correcto de la API: http://localhost:3000
