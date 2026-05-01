@@ -15,7 +15,8 @@ En este laboratorio se realizaron dos tareas principales. El primer objetivo de 
 
 ## Instrucciones de uso de la API 
 - Activar el servidor
-  1. Abrir el archivo index.js dentro de la carpeta api con Visual Studio Code 
+  1. Abrir el archivo index.js dentro de la carpeta api con Visual Studio Code
+     
   2. Crear una nueva terminal de tipo Command Prompt
      2.1 En el menú de la barra superior de Visual Studio Code posicionar el cursor sobre la opción llamada "terminal" (Se desplegará un menú) 
      2.2 Hacer click en la opción "New Terminal"
