@@ -8,7 +8,7 @@
 
 
 ## 3. Solicitud HTTP POST: Registrar un nuevo videojuego 
-<img width="1912" height="1151" alt="image" src="https://github.com/user-attachments/assets/b148aad4-177e-4694-b9cd-58ceffd2add3" />
+<img width="1918" height="1151" alt="image" src="https://github.com/user-attachments/assets/ac9fff20-9476-4fbd-acc7-e1886bf30859" />
 
 
 ## 4. Solicitud HTTP PUT: Cambiar toda la información de un videojuego 
