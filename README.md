@@ -14,22 +14,6 @@ En este laboratorio se realizaron dos tareas principales. El primer objetivo de 
 - Postman
 
 ## Instrucciones de uso de la API 
-- Activar el servidor
-  1. Abrir el archivo index.js dentro de la carpeta api con Visual Studio Code
-     
-  2. Crear una nueva terminal de tipo Command Prompt
-     2.1 En el menú de la barra superior de Visual Studio Code posicionar el cursor sobre la opción llamada "terminal" (Se desplegará un menú) 
-     2.2 Hacer click en la opción "New Terminal"
-     2.3 En la ventana negra que se desplegó en la parte inferior al seleccionar la opción del paso anterior hacer click en el símbolo de punta de flecha hacia abajo (Se desplegará un menú)
-     2.4 Seleccionar la opción Command Prompt
-  3. Acceder a la ruta donde se encuentra el archivo index.js que está dentro de la carpeta api
-     3.1 Ingresar el comando cd en la terminal de tipo Command Prompt
-     3.2 Ingresar al explorador de archivos
-     3.3 En el explorador de archivos dirigirse a la ubicación donde está el archivo index.js
-     3.4 Copiar la ruta que aparece en la barra búsqueda que aparece en la parte superior
-     3.5 Pegar la ruta copiada en el paso anterior luego del comando cd y presionar la tecla enter
-  4. En la nueva linea que se generó escribir el siguiente comando: node index.js 
-
 - Consumir la API 
   - NOTA: Para acceder a cada uno de los recursos de esta API se requiere ingresar las ruta de cada recurso en una ventana de algún navegador.
   - Rutas disponibles:
